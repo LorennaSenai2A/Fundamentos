@@ -79,7 +79,7 @@ internal class Program
         Console.WriteLine();
 
         Pessoa pessoa1 = new Pessoa();
-        pessoa1.Nome = "Lorena";
+        pessoa1.Nome = "Lorenna";
         pessoa1.Idade = 16;
 
         pessoa1.Envelhecer(5);
@@ -133,11 +133,41 @@ internal class Program
         Console.WriteLine(galinha.Nome + " faz: ");
         galinha.emitirSom();
 
+        /*Console.WriteLine("========================");
+        Console.WriteLine();
+
+        Cavalheiro macedo = new Cavalheiro();
+        macedo.Nome = "Macedo";
+        macedo.Vida = 100;
+        macedo.Inteligencia = 70;
+        macedo.Agilidade = 65;
+        macedo.Forca = 80;
+        macedo.Nivel = 1; */
 
         Console.WriteLine("========================");
         Console.WriteLine();
 
-        Personagem personagem = new Personagem();
+        Mago lucca = new Mago();
+        lucca.Nome = "Lucca";
+        lucca.Vida = 100;
+        lucca.Inteligencia = 85;
+        lucca.Agilidade = 50;
+        lucca.Forca = 60;
+        lucca.Nivel = 1;
+
+
+        Elfo choquito = new Elfo();
+        choquito.Nome = "Choquito";
+        choquito.Vida = 100;
+        choquito.Inteligencia = 55;
+        choquito.Agilidade = 90;
+        choquito.Forca = 75;
+        choquito.Nivel = 1;
+
+        lucca.apresentarSe();
+        choquito.apresentarSe();
+        lucca.batalhar(choquito);
+
 
     }
 }
